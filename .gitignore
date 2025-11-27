@@ -1,0 +1,19 @@
+# Ignorar binarios y ejecutables
+*.out
+*.exe
+*.o
+
+# Ignorar módulos de Fortran precompilados
+*.mod
+*.smod
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
