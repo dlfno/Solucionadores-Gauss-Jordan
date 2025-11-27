@@ -50,7 +50,7 @@ PROGRAM Inversa_Gauss_Jordan
 
   PRINT *, "La Matriz Inversa es:"
   DO i = 1, n
-     PRINT "(10F12.6)", A_inv(i, :)
+     PRINT "(10ES20.8)", A_inv(i, :)
   END DO
 
   DEALLOCATE(A_aum, A_inv)
