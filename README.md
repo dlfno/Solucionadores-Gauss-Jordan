@@ -7,16 +7,24 @@ Además, incluye herramientas de visualización en **Python** para analizar grá
 ## Estructura del Proyecto
 
 ```text
+gauss-jordan-fortran/
+│
+├── Makefile                   <-- Con reglas para compilar, graficar y correr tests
+├── README.md                  <-- Documentación completa
+├── requirements.txt           <-- Dependencias de Python
+│
 ├── src/
-│   ├── inversa.f90       # Cálculo de inversa con Gauss-Jordan
-│   └── refinamiento_iterativo.f90 # Solución robusta con refinamiento iterativo
+│   ├── matrix_inverse.f90       <-- Formato ES20.8 para evitar desbordamiento
+│   └── iterative_refinement.f90 <-- Algoritmo de refinamiento
+│
 ├── scripts/
-│   └── visualize_system.py      # Generador de gráficas en Python
-├── docs/
-│   └── ill_conditioned_system.png # Gráfica generada (output)
-├── Makefile                     # Automatización de compilación y ejecución
-├── requirements.txt             # Dependencias de Python
-└── README.md                    # Documentación
+│   └── visualize_system.py      <-- Script de Python
+│
+├── inputs/                      <-- Carpeta para datos de entrada
+│   └── test_case.txt            <-- Archivo con la matriz mal condicionada
+│
+└── docs/
+    └── ill_conditioned_system.png <-- Gráfica generada
 ````
 
 ## Uso Rápido (Makefile)
