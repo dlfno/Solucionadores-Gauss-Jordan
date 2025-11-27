@@ -67,6 +67,7 @@ $$
 ### Número de Condición $\kappa(A)$
 
 El número de condición cuantifica qué tan sensible es la solución ante errores de redondeo. Se calcula como:
+
 $$
  \kappa(A) = \|A\| \cdot \|A^{-1}\|
 $$
