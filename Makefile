@@ -72,3 +72,15 @@ info:
 	@echo "--------------------------------------------------"
 
 .PHONY: all clean plot deps help info
+
+# Ejecutar el Caso de Estudio
+run: $(EXE_INVERSA) $(EXE_REFINAMIENTO)
+	@echo "========================================"
+	@echo "1. Ejecutando Inversa con Caso de Estudio"
+	@echo "========================================"
+	./$(EXE_INVERSA) < inputs/caso_estudio.txt
+	@echo " "
+	@echo "========================================"
+	@echo "2. Ejecutando Refinamiento Iterativo"
+	@echo "========================================"
+	./$(EXE_REFINAMIENTO) < inputs/caso_estudio.txt

@@ -38,7 +38,14 @@ make         # Compilar Fortran
 make plot    # Generar gráficas
 ./refinamiento.out # Ejecutar el análisis numérico
 ```
+##  Ejecutar Caso de Estudio
 
+Para reproducir los resultados del sistema mal condicionado sin introducir datos manualmente, se ha incluido un archivo de entrada predefinido en `inputs/test_case.txt`.
+
+Puede ejecutar la demostración completa con un solo comando:
+
+```bash
+make run
 -----
 
 ## 1\. Cálculo de la Matriz Inversa
